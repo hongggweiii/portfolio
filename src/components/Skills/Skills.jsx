@@ -8,8 +8,10 @@ import cssSVG from '../../assets/languages/css.svg';
 import javascriptSVG from '../../assets/languages/javascript.svg';
 import rSVG from '../../assets/languages/r.svg';
 import typescriptSVG from '../../assets/languages/typescript.svg';
+import golangSVG from '../../assets/languages/golang.svg';
 
 import reactSVG from '../../assets/frameworks/react.svg';
+import springSVG from '../../assets/frameworks/spring.svg'
 import djangoSVG from '../../assets/frameworks/django.svg';
 import flaskSVG from '../../assets/frameworks/flask.svg';
 import streamlitSVG from '../../assets/frameworks/streamlit.svg';
@@ -39,6 +41,7 @@ const skills = () => {
                 <div className='languages-icon-container'>
                     <a href='https://www.python.org/' target='_blank'><img src={pythonSVG} alt='python' className='scale-up-sm-lang'/></a>
                     <a href='https://www.java.com/en/' target='_blank'><img src={javaSVG} alt='java'/></a>
+                    <a href='https://go.dev/' target='_blank'><img src={golangSVG} alt='golang'/></a>
                     <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'><img src={javascriptSVG} alt='javascript'/></a>
                     <a href='https://www.typescriptlang.org/' target='_blank'><img src={typescriptSVG} alt='typescript'/></a>
                     <a href='https://www.mysql.com/' target='_blank'><img src={mysqlSVG} alt='mysql' className='scale-up-sm-lang'/></a>
@@ -54,6 +57,7 @@ const skills = () => {
                     <a href='https://nodejs.org/en' target='_blank'><img src={nodejsSVG} alt='nodejs'/></a>
                     <a href='https://vuejs.org/' target='_blank'><img src={vuejsSVG} alt='vuejs'/></a>
                     <a href='https://www.djangoproject.com/' target='_blank'><img src={djangoSVG} alt='django'/></a>
+                    <a href='https://spring.io/' target='_blank'><img src={springSVG} alt='spring'/></a>
                     <a href='https://flask.palletsprojects.com/en/stable/' target='_blank'><img src={flaskSVG} alt='flask'/></a>
                     <a href='https://streamlit.io/' target='_blank'><img src={streamlitSVG} alt='streamlit'/></a>
                     <a href='https://umijs.org/en-US' target='_blank'><img src={umijsSVG} alt='umijs'/></a>
