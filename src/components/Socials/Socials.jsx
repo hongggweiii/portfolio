@@ -6,12 +6,12 @@ import linkedinSVG from '../../assets/socials/linkedin.svg';
 const socialIcons = [
     {
         name: "Github",
-        link: "https://github.com/13ack2basixs",
+        link: "https://github.com/hongggweiii",
         svg: githubSVG
     },
     {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/hongwei13",
+        link: "https://www.linkedin.com/in/hongweitai",
         svg: linkedinSVG
     }
 ]
