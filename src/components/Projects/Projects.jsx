@@ -4,6 +4,7 @@ import fintrack from '../../assets/previews/fintrack.png';
 import what2watch from '../../assets/previews/what2watch.png';
 import aifilereader from '../../assets/previews/aifilereader.png';
 import betatrade from '../../assets/previews/betatrade.png';
+import gcmai from '../../assets/previews/gcmai.png';
 
 import gitSVG from '../../assets/tools/git.svg';
 import vuejsSVG from '../../assets/frameworks/vuejs.svg';
@@ -22,9 +23,17 @@ import postgresqlSVG from '../../assets/languages/postgresql.svg';
 import nodejsSVG from '../../assets/frameworks/nodejs.svg';
 import reactSVG from '../../assets/frameworks/react.svg';
 import mongodbSVG from '../../assets/tools/mongodb.svg';
+import golangSVG from '../../assets/languages/golang.svg'
 
 
 const projectItems = [
+    {
+        title: "gcm.ai",
+        description: "AI driven CLI utility that helps you generate Git commit messages",
+        demolink: "https://github.com/hongggweiii/gcm.ai",
+        techLogos: [golangSVG],
+        image: gcmai,
+    },
     {
         title: "what2watch",
         description: "Movie recommendation platform that consolidates content from mulitple streaming sites and provides personalised movie recommendations. With the overload of streaming options, what2watch helps users make informed decisions and discover hidden gems.",
