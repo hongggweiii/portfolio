@@ -107,3 +107,29 @@
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+    #skills {
+        font-size: 2.5rem;
+    }
+
+    .languages-icon-container,
+    .frameworks-icon-container,
+    .tools-icon-container,
+    .libraries-icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .languages-icon-container a,
+    .frameworks-icon-container a,
+    .tools-icon-container a,
+    .libraries-icon-container a {
+        width: calc(25% - 1.125rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

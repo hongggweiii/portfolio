@@ -24,6 +24,7 @@ import postgresqlSVG from '../../assets/database/postgresql.svg';
 import nodejsSVG from '../../assets/framework/nodejs.svg';
 import reactSVG from '../../assets/framework/react.svg';
 import mongodbSVG from '../../assets/database/mongodb.svg';
+import clickhouseSVG from '../../assets/database/clickhouse.svg';
 import golangSVG from '../../assets/language/golang.svg';
 
 
@@ -32,7 +33,7 @@ const projectItems = [
         title: "Market Nodes",
         description: "A distributed backend lab featuring three Go microservices: a high-throughput Kafka/ClickHouse market data ingestor, a concurrency-safe real-time order book engine, and a gRPC-based cross-exchange arbitrage detector.",
         demolink: "https://github.com/hongggweiii/market-nodes",
-        techLogos: [golangSVG, dockerSVG, gitSVG],
+        techLogos: [golangSVG, dockerSVG, clickhouseSVG, gitSVG],
         image: marketnodes,
     },
     {

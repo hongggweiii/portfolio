@@ -21,6 +21,7 @@ import tailwindSVG from '../../assets/framework/tailwind.svg';
 import mysqlSVG from '../../assets/database/mysql.svg';
 import postgresqlSVG from '../../assets/database/postgresql.svg';
 import mongodbSVG from '../../assets/database/mongodb.svg';
+import clickhouseSVG from '../../assets/database/clickhouse.svg';
 
 import gitSVG from '../../assets/tool/git.svg';
 import dockerSVG from '../../assets/tool/docker.svg';
@@ -69,6 +70,7 @@ const skills = () => {
                     <a href='https://www.mysql.com/' target='_blank'><img src={mysqlSVG} alt='mysql' className='scale-up-sm-lang'/></a>
                     <a href='https://www.postgresql.org/' target='_blank'><img src={postgresqlSVG} alt='postgresql'/></a>
                     <a href='https://www.mongodb.com/' target='_blank'><img src={mongodbSVG} alt='mongodb' className='scale-up-sm-tool'/></a>
+                    <a href='https://clickhouse.com/' target='_blank'><img src={clickhouseSVG} alt='clickhouse'/></a>
                 </div>
 
                 <p className='skills-subtitle'>Tools</p>

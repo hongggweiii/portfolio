@@ -6,3 +6,13 @@
     font-size: 1.2rem;
     margin: 5px;
 }
+
+@media (max-width: 768px) {
+    #about {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+}
