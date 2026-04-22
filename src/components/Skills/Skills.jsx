@@ -1,35 +1,37 @@
 import './Skills.css'
-import pythonSVG from '../../assets/languages/python.svg';
-import htmlSVG from '../../assets/languages/html.svg';
-import javaSVG from '../../assets/languages/java.svg';
-import mysqlSVG from '../../assets/languages/mysql.svg';
-import postgresqlSVG from '../../assets/languages/postgresql.svg';
-import cssSVG from '../../assets/languages/css.svg';
-import javascriptSVG from '../../assets/languages/javascript.svg';
-import rSVG from '../../assets/languages/r.svg';
-import typescriptSVG from '../../assets/languages/typescript.svg';
-import golangSVG from '../../assets/languages/golang.svg';
+import pythonSVG from '../../assets/language/python.svg';
+import htmlSVG from '../../assets/language/html.svg';
+import javaSVG from '../../assets/language/java.svg';
+import cssSVG from '../../assets/language/css.svg';
+import javascriptSVG from '../../assets/language/javascript.svg';
+import rSVG from '../../assets/language/r.svg';
+import typescriptSVG from '../../assets/language/typescript.svg';
+import golangSVG from '../../assets/language/golang.svg';
 
-import reactSVG from '../../assets/frameworks/react.svg';
-import springSVG from '../../assets/frameworks/spring.svg'
-import djangoSVG from '../../assets/frameworks/django.svg';
-import flaskSVG from '../../assets/frameworks/flask.svg';
-import streamlitSVG from '../../assets/frameworks/streamlit.svg';
-import vuejsSVG from '../../assets/frameworks/vuejs.svg';
-import nodejsSVG from '../../assets/frameworks/nodejs.svg';
-import umijsSVG from '../../assets/frameworks/umijs.png';
-import tailwindSVG from '../../assets/frameworks/tailwind.svg';
+import reactSVG from '../../assets/framework/react.svg';
+import springSVG from '../../assets/framework/spring.svg'
+import djangoSVG from '../../assets/framework/django.svg';
+import flaskSVG from '../../assets/framework/flask.svg';
+import streamlitSVG from '../../assets/framework/streamlit.svg';
+import vuejsSVG from '../../assets/framework/vuejs.svg';
+import nodejsSVG from '../../assets/framework/nodejs.svg';
+import umijsSVG from '../../assets/framework/umijs.png';
+import tailwindSVG from '../../assets/framework/tailwind.svg';
 
-import gitSVG from '../../assets/tools/git.svg';
-import dockerSVG from '../../assets/tools/docker.svg';
-import awsSVG from '../../assets/tools/aws.svg';
-import tableauSVG from '../../assets/tools/tableau.svg';
-import firebaseSVG from '../../assets/tools/firebase.svg';
-import mongodbSVG from '../../assets/tools/mongodb.svg';
+import mysqlSVG from '../../assets/database/mysql.svg';
+import postgresqlSVG from '../../assets/database/postgresql.svg';
+import mongodbSVG from '../../assets/database/mongodb.svg';
 
-import pandasSVG from '../../assets/libraries/pandas.svg';
-import numpySVG from '../../assets/libraries/numpy.svg';
-import chartjsSVG from '../../assets/libraries/chartjs.svg';
+import gitSVG from '../../assets/tool/git.svg';
+import dockerSVG from '../../assets/tool/docker.svg';
+import awsSVG from '../../assets/tool/aws.svg';
+import tableauSVG from '../../assets/tool/tableau.svg';
+import firebaseSVG from '../../assets/tool/firebase.svg';
+
+import pandasSVG from '../../assets/library/pandas.svg';
+import numpySVG from '../../assets/library/numpy.svg';
+import chartjsSVG from '../../assets/library/chartjs.svg';
+import plotlySVG from '../../assets/library/plotly.svg';
 
 const skills = () => {
     return (
@@ -44,8 +46,6 @@ const skills = () => {
                     <a href='https://go.dev/' target='_blank'><img src={golangSVG} alt='golang'/></a>
                     <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'><img src={javascriptSVG} alt='javascript'/></a>
                     <a href='https://www.typescriptlang.org/' target='_blank'><img src={typescriptSVG} alt='typescript'/></a>
-                    <a href='https://www.mysql.com/' target='_blank'><img src={mysqlSVG} alt='mysql' className='scale-up-sm-lang'/></a>
-                    <a href='https://www.postgresql.org/' target='_blank'><img src={postgresqlSVG} alt='postgresql'/></a>
                     <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'><img src={htmlSVG} alt='html'/></a>
                     <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank'><img src={cssSVG} alt='css'/></a>
                     <a href='https://www.r-project.org/' target='_blank'><img src={rSVG} alt='r'/></a>
@@ -64,12 +64,18 @@ const skills = () => {
                     <a href='https://tailwindcss.com/' target='_blank'><img src={tailwindSVG} alt='tailwind'/></a>
                 </div>
 
+                <p className='skills-subtitle'>Databases</p>
+                <div className='tools-icon-container'>
+                    <a href='https://www.mysql.com/' target='_blank'><img src={mysqlSVG} alt='mysql' className='scale-up-sm-lang'/></a>
+                    <a href='https://www.postgresql.org/' target='_blank'><img src={postgresqlSVG} alt='postgresql'/></a>
+                    <a href='https://www.mongodb.com/' target='_blank'><img src={mongodbSVG} alt='mongodb' className='scale-up-sm-tool'/></a>
+                </div>
+
                 <p className='skills-subtitle'>Tools</p>
                 <div className='tools-icon-container'>
                     <a href='https://git-scm.com/' target='_blank'><img src={gitSVG} alt='git' className='scale-up-sm-tool'/></a>
                     <a href='https://www.docker.com/' target='_blank'><img src={dockerSVG} alt='docker' className='scale-up-sm-tool'/></a>
                     <a href='https://www.tableau.com/' target='_blank'><img src={tableauSVG} alt='tableau'/></a>
-                    <a href='https://www.mongodb.com/' target='_blank'><img src={mongodbSVG} alt='mongodb' className='scale-up-sm-tool'/></a>
                     <a href='https://firebase.google.com/' target='_blank'><img src={firebaseSVG} alt='firebase'/></a>
                     <a href='https://aws.amazon.com/' target='_blank'><img src={awsSVG} alt='aws'/></a>
                 </div>
@@ -79,6 +85,7 @@ const skills = () => {
                     <a href='https://pandas.pydata.org/' target='_blank'><img src={pandasSVG} alt='pandas'/></a>
                     <a href='https://numpy.org/' target='_blank'><img src={numpySVG} alt='numpy'/></a>
                     <a href='https://www.chartjs.org/' target='_blank'><img src={chartjsSVG} alt='chartjs'/></a>
+                    <a href='https://plotly.com/' target='_blank'><img src={plotlySVG} alt='plotly'/></a>
                 </div>
             </div>
         </div>

@@ -1,37 +1,45 @@
 import ProjectCard from './ProjectCard';
 import './Projects.css';
-import fintrack from '../../assets/previews/fintrack.png';
-import what2watch from '../../assets/previews/what2watch.png';
-import aifilereader from '../../assets/previews/aifilereader.png';
-import betatrade from '../../assets/previews/betatrade.png';
-import gcmai from '../../assets/previews/gcmai.png';
+import fintrack from '../../assets/preview/fintrack.png';
+import what2watch from '../../assets/preview/what2watch.png';
+import aifilereader from '../../assets/preview/aifilereader.png';
+import betatrade from '../../assets/preview/betatrade.png';
+import gcmai from '../../assets/preview/gcmai.png';
+import marketnodes from '../../assets/preview/marketnodes.png';
 
-import gitSVG from '../../assets/tools/git.svg';
-import vuejsSVG from '../../assets/frameworks/vuejs.svg';
-import firebaseSVG from '../../assets/tools/firebase.svg';
-import javascriptSVG from '../../assets/languages/javascript.svg';
-import htmlSVG from '../../assets/languages/html.svg';
-import cssSVG from '../../assets/languages/css.svg';
-import pythonSVG from '../../assets/languages/python.svg';
-import streamlitSVG from '../../assets/frameworks/streamlit.svg';
-import pandasSVG from '../../assets/libraries/pandas.svg';
-import chartjsSVG from '../../assets/libraries/chartjs.svg';
-import dockerSVG from '../../assets/tools/docker.svg';
-import awsSVG from '../../assets/tools/aws.svg';
-import djangoSVG from '../../assets/frameworks/django.svg';
-import postgresqlSVG from '../../assets/languages/postgresql.svg';
-import nodejsSVG from '../../assets/frameworks/nodejs.svg';
-import reactSVG from '../../assets/frameworks/react.svg';
-import mongodbSVG from '../../assets/tools/mongodb.svg';
-import golangSVG from '../../assets/languages/golang.svg'
+import gitSVG from '../../assets/tool/git.svg';
+import vuejsSVG from '../../assets/framework/vuejs.svg';
+import firebaseSVG from '../../assets/tool/firebase.svg';
+import javascriptSVG from '../../assets/language/javascript.svg';
+import htmlSVG from '../../assets/language/html.svg';
+import cssSVG from '../../assets/language/css.svg';
+import pythonSVG from '../../assets/language/python.svg';
+import streamlitSVG from '../../assets/framework/streamlit.svg';
+import pandasSVG from '../../assets/library/pandas.svg';
+import chartjsSVG from '../../assets/library/chartjs.svg';
+import dockerSVG from '../../assets/tool/docker.svg';
+import awsSVG from '../../assets/tool/aws.svg';
+import djangoSVG from '../../assets/framework/django.svg';
+import postgresqlSVG from '../../assets/database/postgresql.svg';
+import nodejsSVG from '../../assets/framework/nodejs.svg';
+import reactSVG from '../../assets/framework/react.svg';
+import mongodbSVG from '../../assets/database/mongodb.svg';
+import golangSVG from '../../assets/language/golang.svg';
 
 
 const projectItems = [
     {
+        title: "Market Nodes",
+        description: "A distributed backend lab featuring three Go microservices: a high-throughput Kafka/ClickHouse market data ingestor, a concurrency-safe real-time order book engine, and a gRPC-based cross-exchange arbitrage detector.",
+        demolink: "https://github.com/hongggweiii/market-nodes",
+        techLogos: [golangSVG, dockerSVG, gitSVG],
+        image: marketnodes,
+    },
+    {
         title: "gcm.ai",
         description: "AI driven CLI utility that helps you generate Git commit messages",
         demolink: "https://github.com/hongggweiii/gcm.ai",
-        techLogos: [golangSVG],
+        techLogos: [golangSVG, gitSVG],
         image: gcmai,
     },
     {
@@ -52,7 +60,7 @@ const projectItems = [
         title: "Fintrack",
         description: "An expense tracker that helps users manage their finances in one place, simplifying budgeting and financial tracking. It reduces the need for multiple apps, giving users a streamlined way to track and manage their assets and expenses.",
         demolink: "http://54.179.109.136:8000/",
-        techLogos: [pythonSVG, djangoSVG, javascriptSVG, htmlSVG, cssSVG, dockerSVG, postgresqlSVG,awsSVG, chartjsSVG, gitSVG],
+        techLogos: [pythonSVG, djangoSVG, javascriptSVG, htmlSVG, cssSVG, dockerSVG, postgresqlSVG, awsSVG, chartjsSVG, gitSVG],
         image: fintrack,
     },
     {
@@ -62,7 +70,7 @@ const projectItems = [
         techLogos: [javascriptSVG, nodejsSVG, reactSVG, htmlSVG, cssSVG, mongodbSVG, chartjsSVG, gitSVG],
         image: betatrade,
     },
-    
+
 ]
 
 // Iterate over projectsItems and create a ProjectCard
@@ -72,8 +80,8 @@ const Projects = () => {
             <h2 id='projects'>Projects</h2>
 
             {projectItems.map(proj => (
-                <ProjectCard 
-                    key={proj.title} 
+                <ProjectCard
+                    key={proj.title}
                     title={proj.title}
                     description={proj.description}
                     demolink={proj.demolink}
@@ -86,4 +94,3 @@ const Projects = () => {
 }
 
 export default Projects;
-

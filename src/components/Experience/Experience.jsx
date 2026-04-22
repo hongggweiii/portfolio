@@ -1,9 +1,9 @@
 import ExperienceCard from './ExperienceCard';
 import './Experience.css';
 
-import bfe from '../../assets/experiences/bfe.png';
-import webot from '../../assets/experiences/webot.svg';
-import spgroup from '../../assets/experiences/spgroup.png'
+import bfe from '../../assets/company/bfe.png';
+import webot from '../../assets/company/webot.svg';
+import spgroup from '../../assets/company/spgroup.png'
 
 const experienceItems = [
     {
@@ -27,7 +27,7 @@ const experienceItems = [
         dates: "Feb 2025 - Aug 2025",
         company: "Bridges for Enterprise",
     },
-    
+
 ];
 
 // Iterate over experienceItems and create an ExperienceCard
@@ -37,7 +37,7 @@ const Experience = () => {
             <h2 id='experience'>Experiences</h2>
 
             {experienceItems.map(exp => (
-                <ExperienceCard 
+                <ExperienceCard
                     key={exp.role}
                     imgSrc={exp.imgSrc}
                     imgAlt={exp.imgAlt}
@@ -51,4 +51,3 @@ const Experience = () => {
 }
 
 export default Experience;
-

@@ -1,7 +1,7 @@
 import './Socials.css'
 import SocialIcon from './SocialIcon';
-import githubSVG from '../../assets/socials/github.svg';
-import linkedinSVG from '../../assets/socials/linkedin.svg';
+import githubSVG from '../../assets/social/github.svg';
+import linkedinSVG from '../../assets/social/linkedin.svg';
 
 const socialIcons = [
     {
@@ -20,7 +20,7 @@ const Socials = () => {
     return (
         <div className='socials-container'>
             {socialIcons.map((icon) => (
-                <SocialIcon 
+                <SocialIcon
                     key={icon.name}
                     link={icon.link}
                     svg={icon.svg}
