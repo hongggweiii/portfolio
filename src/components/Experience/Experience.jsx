@@ -3,14 +3,22 @@ import './Experience.css';
 
 import bfe from '../../assets/company/bfe.png';
 import webot from '../../assets/company/webot.svg';
-import spgroup from '../../assets/company/spgroup.png'
+import spgroup from '../../assets/company/spgroup.png';
+import nets from '../../assets/company/nets.png';
 
 const experienceItems = [
     {
+        imgSrc: nets,
+        imgAlt: 'nets',
+        role: "Software Engineer",
+        dates: "Jun 2026 - Present",
+        company: "NETS",
+    },
+    {
         imgSrc: spgroup,
         imgAlt: 'spgroup',
-        role: "Full Stack Developer",
-        dates: "Dec 2025 - Present",
+        role: "Full Stack Engineer",
+        dates: "Dec 2025 - May 2026",
         company: "SP Group",
     },
     {

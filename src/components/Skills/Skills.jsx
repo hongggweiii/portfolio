@@ -16,7 +16,7 @@ import streamlitSVG from '../../assets/framework/streamlit.svg';
 import vuejsSVG from '../../assets/framework/vuejs.svg';
 import nodejsSVG from '../../assets/framework/nodejs.svg';
 import umijsSVG from '../../assets/framework/umijs.png';
-import tailwindSVG from '../../assets/framework/tailwind.svg';
+import angularSVG from '../../assets/framework/angular.svg';
 
 import mysqlSVG from '../../assets/database/mysql.svg';
 import postgresqlSVG from '../../assets/database/postgresql.svg';
@@ -62,7 +62,7 @@ const skills = () => {
                     <a href='https://flask.palletsprojects.com/en/stable/' target='_blank'><img src={flaskSVG} alt='flask'/></a>
                     <a href='https://streamlit.io/' target='_blank'><img src={streamlitSVG} alt='streamlit'/></a>
                     <a href='https://umijs.org/en-US' target='_blank'><img src={umijsSVG} alt='umijs'/></a>
-                    <a href='https://tailwindcss.com/' target='_blank'><img src={tailwindSVG} alt='tailwind'/></a>
+                    <a href='https://angular.dev/' target='_blank'><img src={angularSVG} alt='angular'/></a>
                 </div>
 
                 <p className='skills-subtitle'>Databases</p>
