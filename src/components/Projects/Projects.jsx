@@ -26,9 +26,20 @@ import reactSVG from '../../assets/framework/react.svg';
 import mongodbSVG from '../../assets/database/mongodb.svg';
 import clickhouseSVG from '../../assets/database/clickhouse.svg';
 import golangSVG from '../../assets/language/golang.svg';
+import fastapiSVG from '../../assets/framework/fastapi.svg';
+import redisSVG from '../../assets/database/redis.svg';
+import langchainSVG from '../../assets/library/langchain.svg';
+import papermind from '../../assets/preview/papermind.png';
 
 
 const projectItems = [
+    {
+        title: "PaperMind",
+        description: "Give it a research topic and PaperMind does the rest — fetching papers, pulling out the key claims, and stitching them into a review. It keeps refining the draft until it's good enough to stop.",
+        demolink: "https://github.com/hongggweiii/papermind",
+        techLogos: [fastapiSVG, redisSVG, langchainSVG],
+        image: papermind,
+    },
     {
         title: "Market Nodes",
         description: "A distributed backend lab featuring three Go microservices: a high-throughput Kafka/ClickHouse market data ingestor, a concurrency-safe real-time order book engine, and a gRPC-based cross-exchange arbitrage detector.",
@@ -60,7 +71,7 @@ const projectItems = [
     {
         title: "Fintrack",
         description: "An expense tracker that helps users manage their finances in one place, simplifying budgeting and financial tracking. It reduces the need for multiple apps, giving users a streamlined way to track and manage their assets and expenses.",
-        demolink: "http://54.179.109.136:8000/",
+        demolink: "https://github.com/hongggweiii/fintrack",
         techLogos: [pythonSVG, djangoSVG, javascriptSVG, htmlSVG, cssSVG, dockerSVG, postgresqlSVG, awsSVG, chartjsSVG, gitSVG],
         image: fintrack,
     },

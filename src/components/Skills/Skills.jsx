@@ -28,11 +28,13 @@ import dockerSVG from '../../assets/tool/docker.svg';
 import awsSVG from '../../assets/tool/aws.svg';
 import tableauSVG from '../../assets/tool/tableau.svg';
 import firebaseSVG from '../../assets/tool/firebase.svg';
+import kafkaSVG from '../../assets/tool/kafka.svg';
 
 import pandasSVG from '../../assets/library/pandas.svg';
 import numpySVG from '../../assets/library/numpy.svg';
 import chartjsSVG from '../../assets/library/chartjs.svg';
 import plotlySVG from '../../assets/library/plotly.svg';
+import langchainSVG from '../../assets/library/langchain.svg';
 
 const skills = () => {
     return (
@@ -80,6 +82,7 @@ const skills = () => {
                     <a href='https://www.tableau.com/' target='_blank'><img src={tableauSVG} alt='tableau'/></a>
                     <a href='https://firebase.google.com/' target='_blank'><img src={firebaseSVG} alt='firebase'/></a>
                     <a href='https://aws.amazon.com/' target='_blank'><img src={awsSVG} alt='aws'/></a>
+                    <a href='https://kafka.apache.org/' target='_blank'><img src={kafkaSVG} alt='kafka'/></a>
                 </div>
 
                 <p className='skills-subtitle'>Libraries</p>
@@ -88,6 +91,7 @@ const skills = () => {
                     <a href='https://numpy.org/' target='_blank'><img src={numpySVG} alt='numpy'/></a>
                     <a href='https://www.chartjs.org/' target='_blank'><img src={chartjsSVG} alt='chartjs'/></a>
                     <a href='https://plotly.com/' target='_blank'><img src={plotlySVG} alt='plotly'/></a>
+                    <a href='https://www.langchain.com/' target='_blank'><img src={langchainSVG} alt='langchain'/></a>
                 </div>
             </div>
         </div>
